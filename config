@@ -154,6 +154,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+workspace "1" output DP1
 workspace "2" output DP1
 workspace "3" output DP2
 workspace "4" output DP2
