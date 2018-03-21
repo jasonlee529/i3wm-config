@@ -169,7 +169,7 @@ bar {
 }
 
 # xscreensaver
-bindsym F12 exec "xscreensaver-command -lock"
+bindsym F12 exec "gnome-screensaver-command --lock"
 bindsym $mod+c exec --no-startup-id pcmanfm
 exec gnome-settings-daemon
 #===volume control===
