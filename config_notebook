@@ -154,10 +154,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-workspace "1" output HDMI-1
-workspace "2" output HDMI-1
-workspace "3" output VGA-1
-workspace "4" output VGA-1
+workspace "1" output DP1
+workspace "2" output DP1
+workspace "3" output DP2
+workspace "4" output DP2
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
