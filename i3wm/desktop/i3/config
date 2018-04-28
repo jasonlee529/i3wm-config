@@ -193,4 +193,6 @@ exec --no-startup-id xset dpms 300
 exec --no-startup-id xcompmgr &
 
 exec --no-startup-id gnome-settings-daemon &
-exec --no-startup-id feh --bg-scale "$HOME/Pictures/windows-error.jpg"
+exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpaper.png"
+exec --no-startup-id $HOME/software/electron-ssr-0.2.3-x86_64.AppImage
+
