@@ -171,7 +171,6 @@ bar {
 # xscreensaver
 bindsym F12 exec "gnome-screensaver-command --lock"
 bindsym $mod+c exec --no-startup-id pcmanfm
-exec gnome-settings-daemon
 #===volume control===
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2dB- unmute
@@ -191,3 +190,5 @@ mode "$mode_system" {
 # screen off | sleep | shutdown(time unit: seconds)
 #exec --no-startup-id xset dpms 300 1357 6789
 exec --no-startup-id xset dpms 300
+exec --no-startup-id $HOME/software/electron-ssr-0.2.3-x86_64.AppImage
+exec --no-startup-id gnome-settings-daemon &
