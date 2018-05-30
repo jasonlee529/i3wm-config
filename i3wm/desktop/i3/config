@@ -195,4 +195,5 @@ exec --no-startup-id xcompmgr &
 exec --no-startup-id gnome-settings-daemon &
 exec --no-startup-id feh --bg-scale "$HOME/Pictures/wallpaper.png"
 exec --no-startup-id $HOME/software/electron-ssr-0.2.3-x86_64.AppImage
+exec --no-startup-id xrander --output VGA-1 --right-of HDMI-1 --rotate left
 
