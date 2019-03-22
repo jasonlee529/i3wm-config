@@ -37,7 +37,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id rofi -show run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -108,6 +109,17 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+
+bindsym $mod+KP_End    workspace 1
+bindsym $mod+KP_Down   workspace 2
+bindsym $mod+KP_Next   workspace 3
+bindsym $mod+KP_Left   workspace 4
+bindsym $mod+KP_Begin  workspace 5
+bindsym $mod+KP_Right  workspace 6
+bindsym $mod+KP_Home   workspace 7
+bindsym $mod+KP_Up     workspace 8
+bindsym $mod+KP_Prior  workspace 9
+bindsym $mod+KP_Insert workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -199,5 +211,7 @@ exec --no-startup-id xset dpms 300
 exec --no-startup-id xcompmgr &
 
 exec --no-startup-id gnome-settings-daemon &
+exec --no-startup-id unity-settings-daemon &
+exec --no-startup-id nm-applet &
 exec --no-startup-id $HOME/software/electron-ssr-0.2.5.AppImage &
 exec --no-startup-id feh --bg-max "$HOME/Pictures/wallpaper.jpg" &
